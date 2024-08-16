@@ -12,7 +12,7 @@ let crudData = []
 
 io.on("connection", (socket) => {
     socket.on('data', (data) =>{
-        crudData.push(data)
+        crudData.push('testing knowledge of git')
 
         socket.emit("crudData", crudData)
     } )
